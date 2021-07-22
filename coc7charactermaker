@@ -1,0 +1,94 @@
+
+<html>
+<center>
+<body>
+<div><font size="5"><b>CoC 7th 랜덤 캐릭터 특성치</b></font> </div>
+<br>
+<button onclick="random()"><font size="5"> 캐릭터 만들기</font> </button>
+
+<br>
+<table>
+  <tr>
+    <td>근력 (Str): </td>
+    <td><p id="str"></p></td>
+  </tr>
+  <tr>
+    <td>건강 (Con):</td>
+    <td><p id="con"></p></td>
+  </tr>
+<tr>
+    <td>크기 (Siz):</td>
+    <td><p id="siz"></p></td>
+  </tr>
+<tr>
+    <td>민첩성 (Dex):</td>
+    <td><p id="dex"></p></td>
+  </tr>
+<tr>
+    <td>외모 (App):</td>
+    <td><p id="app"></p></td>
+  </tr>
+<tr>
+    <td>지능 (Int):</td>
+    <td><p id="int"></p></td>
+  </tr>
+<tr>
+    <td>정신력 (Pow):</td>
+    <td><p id="pow"></p></td>
+  </tr>
+<tr>
+    <td>교육 (Edu): </td>
+    <td><p id="edu"></p></td>
+  </tr>
+  <tr>
+    <td>운 (Luk):</td>
+    <td><p id="luk"></p></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>기능 점수:</td>
+    <td><p id="freenum"></p></td>
+  </tr>
+</table>
+<p style="color:#c4c4c4; font-size: 10pt">
+by. 뼈고래 (@bone_whale)
+</p>
+
+<script>
+
+function random(){
+
+document.getElementById("str").innerHTML = (Math.floor(Math.random()*6+1)+Math.floor(Math.random()*6+1)+Math.floor(Math.random()*6+1))*5
+
+document.getElementById("con").innerHTML = (Math.floor(Math.random()*6+1)+Math.floor(Math.random()*6+1)+Math.floor(Math.random()*6+1))*5
+
+document.getElementById("siz").innerHTML = (Math.floor(Math.random()*6+1)+Math.floor(Math.random()*6+1)+6)*5
+
+document.getElementById("dex").innerHTML = (Math.floor(Math.random()*6+1)+Math.floor(Math.random()*6+1)+Math.floor(Math.random()*6+1))*5
+
+document.getElementById("app").innerHTML = (Math.floor(Math.random()*6+1)+Math.floor(Math.random()*6+1)+Math.floor(Math.random()*6+1))*5
+
+document.getElementById("int").innerHTML = 
+(Math.floor(Math.random()*6+1)+Math.floor(Math.random()*6+1)+6)*5
+
+document.getElementById("pow").innerHTML = (Math.floor(Math.random()*6+1)+Math.floor(Math.random()*6+1)+Math.floor(Math.random()*6+1))*5
+
+document.getElementById("edu").innerHTML = 
+(Math.floor(Math.random()*6+1)+Math.floor(Math.random()*6+1)+6)*5
+
+document.getElementById("luk").innerHTML = (Math.floor(Math.random()*6+1)+Math.floor(Math.random()*6+1)+Math.floor(Math.random()*6+1))*5
+
+document.getElementById("freenum").innerHTML = (4*Number(document.getElementById("edu").innerHTML))+(2*Number(document.getElementById("int").innerHTML))
+
+}
+
+
+
+</script>
+
+
+</body>
+</html>
